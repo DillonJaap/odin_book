@@ -1,0 +1,5 @@
+package main
+
+procdueres :: proc() {
+
+}
