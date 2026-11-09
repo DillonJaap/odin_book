@@ -1,5 +1,6 @@
 package main
 
 main :: proc() {
-	types()
+	// types()
+	pointers()
 }
