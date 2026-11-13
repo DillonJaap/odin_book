@@ -1,5 +1,7 @@
 package main
 
+import "core:os"
+import "core:math"
 import "core:fmt"
 
 write_message :: proc(message: string, label: string = "Info") {
@@ -51,6 +53,26 @@ CoolPerson :: struct {
 // size of CoolPerson is greater than 16 bytes, therefore it gets passed as an immutable reference
 print_person_info :: proc(p: CoolPerson) {
 	fmt.println("%v is %v years old and has %v teeth.", p.name, p.age, p.number_of_teeth)
+}
+
+length :: proc {
+	length_float2,
+	length_float3,
+}
+
+length_float2 :: proc(v: [2]f32)  -> f32 {
+	return math.sqrt(v.x*v.x + v.y*v.y)
+}
+
+length_float3 :: proc(v: [3]f32)  -> f32 {
+	return math.sqrt(v.x*v.x + v.y*v.y + v.z*v.z)
+}
+read_file :: proc() {
+	f, err :=  os.open("my_file.txt")
+	if err != os.ERROR_NONE {
+		// handle error
+	}
+	defer os.close(f)
 }
 
 
