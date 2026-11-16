@@ -2,5 +2,6 @@ package main
 
 main :: proc() {
 	// types()
-	procdueres()
+	// procdueres()
+	fixed_array()
 }
