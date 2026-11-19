@@ -16,10 +16,10 @@ fixed_array :: proc() {
 	for &v in some_ints2 {
 		fmt.println(v)
 	}
-	big_boy := [1_000_000]int{}
-	for &v in big_boy {
-		fmt.println(v)
-	}
+	// big_boy := [1_000_000]int{}
+	// for &v in big_boy {
+	// 	fmt.println(v)
+	// }
 
 	vector3 := [3]f32{1, 2, 3}
 	// can use xyzw or rgba
@@ -44,5 +44,5 @@ fixed_array :: proc() {
 	bobs_niceness := nice_rating[.Bob]
 
 	//fixed capacity dynamic array
-	arr: [dynamic; 1024]int
+	// arr: [dynamic; 1024]int
 }
