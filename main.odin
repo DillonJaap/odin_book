@@ -3,5 +3,6 @@ package main
 main :: proc() {
 	// types()
 	// procdueres()
-	fixed_array()
+	// fixed_array()
+	easier_mm()
 }
